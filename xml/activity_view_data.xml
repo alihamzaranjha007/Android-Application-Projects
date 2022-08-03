@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="5sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome "
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your data from firebase"
+        android:layout_marginTop="20sp"
+        android:textColor="#111"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:id="@+id/mAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:id="@+id/mPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <TextView
+            android:id="@+id/mHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+
+</LinearLayout>

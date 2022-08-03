@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".registerActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_account_profile"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="275dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:hint="Full Name"
+            android:background="@drawable/custom_input"
+            android:textColor="#000000"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30sp">
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="275dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:background="@drawable/custom_input"
+            android:hint="Enter email"
+            android:textColor="#000000"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30sp">
+        <TextView
+            android:id="@+id/textViewPass"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="275dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:background="@drawable/custom_input"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30sp">
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password:"
+            android:layout_gravity="start"
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <EditText
+            android:id="@+id/editTextConPass"
+            android:layout_width="275dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:background="@drawable/custom_input"
+            android:hint="Re-Enter password"
+            android:textColor="#000000"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30sp">
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="327dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose image"
+            android:layout_marginStart="30sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00BCD4"
+            android:onClick="choose_image"/>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="10sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#E91E63"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/login1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account? "
+            android:textColor="#111"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:onClick="loginFun"/>
+    </LinearLayout>
+
+</LinearLayout>

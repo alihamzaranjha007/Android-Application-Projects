@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:background="@drawable/blue_bg">
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="93dp"
+                android:src="@drawable/ic_logo_white"/>
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/editText_email_login"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_input"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="12sp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/editTextTextPassword_login"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:paddingStart="12sp"
+            android:layout_marginTop="30sp"
+            android:drawableStart="@drawable/custom_pass_icon"
+            android:drawablePadding="12sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_input"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#7E111111"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:backgroundTint="#E91E63"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="50sp"
+            android:layout_marginTop="20sp"
+            android:textStyle="bold"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginBottom="10sp"
+            android:layout_gravity="center_horizontal"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have account?"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <TextView
+        android:id="@+id/register2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#025EFF"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="registerFun"/>
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
